@@ -12,7 +12,7 @@
    
     <script 
 var hydra = new Hydra({
-        canvas: document.getElementById("myCanvas"),
+        canvas: (),
         detectAudio: false,
         enableStreamCapture: false,
       })
@@ -22,8 +22,7 @@ osc(20, 0.01, 1.1)
 	.rotate(0, 0.1)
 	.modulate(o0, () => mouse.x * 0.0003)
 	.scale(1.01)
-  	.out(o0)            
-            >
+  	.out(o0)>
     </script>
 
 <!-- partial -->
