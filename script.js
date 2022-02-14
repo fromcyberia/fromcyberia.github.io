@@ -3,14 +3,9 @@
         detectAudio: false,
         enableStreamCapture: false,
       })
-osc(20, 0.01, 1.1)
-	.kaleid(5)
-	.color(2.83,0.91,0.39)
-	.rotate(0, 0.1)
-	
-	.scale(1.01)
-  	.out(o0)
 
+noise(3,0.1).thresh(0.5,0.04).out(o0)
+   
 p1 = new P5()
 //write your own poem here
 textArray = ["hay golpes en la vida", "tan fuertes", "yo no sé", "golpes como los del odio de dios"]
@@ -30,4 +25,3 @@ p1.draw = () => {
   p1.textFont('Courier');
   p1.text(textArray[index],p1.mouseX,p1.mouseY)
 }
-
