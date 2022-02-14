@@ -5,7 +5,7 @@ body {
 
 div {
   position: relative;
-  background: white;
+  background: src="/script.js";
 }
 
 p {
